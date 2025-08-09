@@ -1,14 +1,13 @@
 module.exports.config = {
-  name: "inf",
-  version: "1.0.1", 
-  hasPermssion: 0,
-  credits:"ARIF BABU" ,
-  description: "THIS BOT IS MADE BY PRINCE MEGHWANSI",
-  usePrefix: true,
-  commandCategory: "INFORMATION",
-  cooldowns: 1,
-  dependencies: 
-  {
+	name: "info",
+	version: "1.0.1", 
+	hasPermssion: 0,
+	credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
+	description: "Admin and Bot info.",
+	commandCategory: "...",
+	cooldowns: 1,
+	dependencies: 
+	{
     "request":"",
     "fs-extra":"",
     "axios":""
@@ -19,16 +18,45 @@ const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
 const time = process.uptime(),
-    hours = Math.floor(time / (60 * 60)),
-    minutes = Math.floor((time % (60 * 60)) / 60),
-    seconds = Math.floor(time % 60);
+		hours = Math.floor(time / (60 * 60)),
+		minutes = Math.floor((time % (60 * 60)) / 60),
+		seconds = Math.floor(time % 60);
 const moment = require("moment-timezone");
-var juswa = moment.tz("Asia/Kolkata").format("DD/MM/YYYY");
+var juswa = moment.tz("Asia/Kolkata").format("『D/MM/YYYY』 【HH:mm:ss】");
 var link =                                     
-["https://imgur.com/a/wgSH36Z#2xLvnNc",
-"https://imgur.com/a/09BGVNd#CekX1pu",
-"https://imgur.com/a/01sbLF8#g3RqnWm"];
-var callback = () => api.sendMessage({body:`┏━━━━━┓\n     ✦❥⋆⃝𝐒𝐔𝐒𝐇𝐈𝐋 𝐘𝐀𝐃𝐀𝐕 ✦                    ✧═══•❁🙊❁•═══✧\n┗━━━━━┛\n\n\n         ❁ ═════════ ❃•❃ ═════════ ❁\n                            ♥️ 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗧𝗜𝗢𝗡 ♥️\n         ❁ ═════════ ❃•❃ ═════════ ❁\n\n\n\n🌺  [ 1 ]  𒁍 BOT NAME   →   ${global.config.BOTNAME}\n🌺  [ 2 ]  𒁍 BOT ADMIN   →   ✦❥⋆⃝𝐒𝐔𝐒𝐇𝐈𝐋 𝐘𝐀𝐃𝐀𝐕 ✦\n🌺  [ 3 ]  𒁍 BOT  PREFIX   →   [ ${global.config.PREFIX} ]\n🌺  [ 4 ]  𒁍  DATE   → ${juswa}\n🌺  [ 5 ]  𒁍  BOT RUNNING TIME  →  [ ${hours}:${minutes}:${seconds} ]\n🌺  [ 6 ]  𒁍  https://www.facebook.com/share/19Ufmnhu6V/\n🌺  [ 7 ]  𒁍 WHATSAPP → [ +91 9910xxxx63 ]\n🌺  [ 8 ]  𒁍 INSTAGRAM →  https://www.instagram.com/sushil_babu0?igsh=dm1wbjA2aTIwcmJp\n🌺  [ 9 ]  𒁍 YOUTUBE  →  https://www.youtube.com/@Entertainment.story\n🌺  [ 10 ]  𒁍 GITHUB  →  @Sushilkumar10\n🌺THANKYOU FOR USING ${global.config.BOTNAME} BOT♥️\n\n\n
+["https://i.imghippo.com/files/wgSH36Z#2xLvnNc"];
+var callback = () => api.sendMessage({body:` ╾━╤デ╦︻(▀̿Ĺ̯▀̿ ̿)🇮🇳 𝐀𝐃𝐌𝐈𝐍 𝐀𝐍𝐃 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍 🇮🇳 
+(⌐▀͡ ̯ʖ▀)︻̷┻̿═━一-
+
+☄️Bot Name︎︎︎☄️  ${global.config.BOTNAME}
+
+🔥Bot Admin🔥☞︎︎︎☜︎︎︎✰ 𝗦𝗨𝗦𝗛𝗜𝗟💔🥀
+
+🙈bot andmin owner facebook id link🙈➪ https://www.facebook.com/share/19Ufmnhu6V/ 💞🕊️
+
+👋For Any Kind Of Help Contact On Telegram  Username 👉 @Sushilkumar10😇
+
+✧══════•❁❀❁•══════✧
+
+🌸Bot Prefix🌸☞︎︎︎☜︎︎︎✰ ${global.config.PREFIX}
+
+♥️Bot Owner♥️ ☞︎︎︎☜︎︎︎✰ 𝐒𝐔𝐒𝐇𝐈𝐋 𝐘𝐀𝐃𝐀𝐕
+
+🥳UPTIME🥳
+
+🌪️Today is🌪️ ☞︎︎︎☜︎︎︎✰ ${juswa} 
+
+⚡Bot is running⚡ ${hours}:${minutes}:${seconds}.
+
+✅Thanks for using ${global.config.BOTNAME} Bot🖤
+
+
+🦢🍒•••ꞪɛᏒɛ ɪʂ ɮ❍┼ ❍ωɳɜɽ ɳaʍɜ•••🌷💞
+┏━🕊️━━°❀•°:🎀🧸💙🧸🎀:°•❀°━━💞━┓
+🌸✦✧✧✧✧✰🍒𝐒𝐔𝐒𝐇𝐈𝐋 🌿✰✧✧✧✧✦🌸
+┗━🕊️━━°❀•°:🎀🧸💙🧸🎀:°•❀°━━💞━┛
+
+
 `,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/juswa.jpg")).on("close",() => callback());
    };
