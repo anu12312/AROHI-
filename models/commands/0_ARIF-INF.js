@@ -24,13 +24,13 @@ const time = process.uptime(),
 const moment = require("moment-timezone");
 var juswa = moment.tz("Asia/Kolkata").format("『D/MM/YYYY』 【HH:mm:ss】");
 var link =                                     
-["https://i.imghippo.com/files/wgSH36Z#2xLvnNc"];
+["https://i.imghippo.com/files/lJ8376Tkc.jpg"];
 var callback = () => api.sendMessage({body:` ╾━╤デ╦︻(▀̿Ĺ̯▀̿ ̿)🇮🇳 𝐀𝐃𝐌𝐈𝐍 𝐀𝐍𝐃 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍 🇮🇳 
 (⌐▀͡ ̯ʖ▀)︻̷┻̿═━一-
 
 ☄️Bot Name︎︎︎☄️  ${global.config.BOTNAME}
 
-🔥Bot Admin🔥☞︎︎︎☜︎︎︎✰ 𝗦𝗨𝗦𝗛𝗜𝗟💔🥀
+🔥Bot Admin🔥☞︎︎︎☜︎︎︎✰ 𝐒𝐔𝐒𝐇𝐈𝐋💔🥀
 
 🙈bot andmin owner facebook id link🙈➪ https://www.facebook.com/share/19Ufmnhu6V/ 💞🕊️
 
@@ -53,7 +53,7 @@ var callback = () => api.sendMessage({body:` ╾━╤デ╦︻(▀̿Ĺ̯▀̿ �
 
 🦢🍒•••ꞪɛᏒɛ ɪʂ ɮ❍┼ ❍ωɳɜɽ ɳaʍɜ•••🌷💞
 ┏━🕊️━━°❀•°:🎀🧸💙🧸🎀:°•❀°━━💞━┓
-🌸✦✧✧✧✧✰🍒𝐒𝐔𝐒𝐇𝐈𝐋 🌿✰✧✧✧✧✦🌸
+🌸✦✧✧✧✧✰🍒𝚂𝚄𝚂𝙷𝙸𝙻🌿✰✧✧✧✧✦🌸
 ┗━🕊️━━°❀•°:🎀🧸💙🧸🎀:°•❀°━━💞━┛
 
 
