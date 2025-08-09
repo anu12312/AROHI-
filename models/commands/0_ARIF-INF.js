@@ -25,7 +25,9 @@ const time = process.uptime(),
 const moment = require("moment-timezone");
 var juswa = moment.tz("Asia/Kolkata").format("DD/MM/YYYY");
 var link =                                     
-["https://imgur.com/a/wgSH36Z#2xLvnNc","https://imgur.com/a/09BGVNd#CekX1pu","https://imgur.com/a/01sbLF8#g3RqnWm"];
+["https://imgur.com/a/wgSH36Z#2xLvnNc",
+"https://imgur.com/a/09BGVNd#CekX1pu",
+"https://imgur.com/a/01sbLF8#g3RqnWm"];
 var callback = () => api.sendMessage({body:`┏━━━━━┓\n     ✦❥⋆⃝𝐒𝐔𝐒𝐇𝐈𝐋 𝐘𝐀𝐃𝐀𝐕 ✦                    ✧═══•❁🙊❁•═══✧\n┗━━━━━┛\n\n\n         ❁ ═════════ ❃•❃ ═════════ ❁\n                            ♥️ 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗧𝗜𝗢𝗡 ♥️\n         ❁ ═════════ ❃•❃ ═════════ ❁\n\n\n\n🌺  [ 1 ]  𒁍 BOT NAME   →   ${global.config.BOTNAME}\n🌺  [ 2 ]  𒁍 BOT ADMIN   →   ✦❥⋆⃝𝐒𝐔𝐒𝐇𝐈𝐋 𝐘𝐀𝐃𝐀𝐕 ✦\n🌺  [ 3 ]  𒁍 BOT  PREFIX   →   [ ${global.config.PREFIX} ]\n🌺  [ 4 ]  𒁍  DATE   → ${juswa}\n🌺  [ 5 ]  𒁍  BOT RUNNING TIME  →  [ ${hours}:${minutes}:${seconds} ]\n🌺  [ 6 ]  𒁍  https://www.facebook.com/share/19Ufmnhu6V/\n🌺  [ 7 ]  𒁍 WHATSAPP → [ +91 9910xxxx63 ]\n🌺  [ 8 ]  𒁍 INSTAGRAM →  https://www.instagram.com/sushil_babu0?igsh=dm1wbjA2aTIwcmJp\n🌺  [ 9 ]  𒁍 YOUTUBE  →  https://www.youtube.com/@Entertainment.story\n🌺  [ 10 ]  𒁍 GITHUB  →  @Sushilkumar10\n🌺THANKYOU FOR USING ${global.config.BOTNAME} BOT♥️\n\n\n
 `,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/juswa.jpg")).on("close",() => callback());
