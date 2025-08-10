@@ -46,7 +46,7 @@ module.exports.run = async function ({ api, event }) {
 ${adminNames.join("\n")}
 
 📚 𝙇𝙀𝘼𝙍𝙉 𝘽𝙊𝙏 𝘾𝙍𝙀𝘼𝙏𝙄𝙊𝙉:
-🔗 https://m.youtube.com/@mirrykal
+🔗 https://m.youtube.com/@Entertainment.story.
     `;
 
     // 🎯 Image map (filename -> URL)
